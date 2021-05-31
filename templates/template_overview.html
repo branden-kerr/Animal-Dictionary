@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="no-js">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link
+        href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900"
+        rel="stylesheet"
+      />
+
+      <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+
+        <style>
+
+            *,
+            *::before,
+            *::after {
+                padding: 0;
+                margin: 0;
+                box-sizing: inherit;
+            }
+
+            html {
+                font-size: 62.5%;
+                box-sizing: border-box;
+
+                background-image: url("https://images.unsplash.com/photo-1520637102912-2df6bb2aec6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80");
+                /* background-image: url("https://images.pexels.com/photos/127577/nature-stars-night-galaxy-127577.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+
+    
+            }
+
+            .container {
+                font-family: 'Nunito Sans', sans-serif;
+            }
+
+            .page-title {
+                /* font-family: 'Piedra', cursive; */
+                letter-spacing: .1rem;
+                font-size: 3.5rem;
+                color:white;
+            }
+
+            .animals_container {
+                height: auto;
+                width: 70vw;
+                margin: 3.5rem auto;
+                padding: 5rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows:30rem;
+                grid-auto-rows: 30rem;
+                grid-gap: 3rem;
+
+                justify-items: center;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                .animals_container {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media only screen and (max-width: 850px) {
+                .animals_container {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+
+
+            h1 {
+                text-align: center;
+                margin-top: 5rem;
+            }
+
+            span {
+                font-weight: 600;
+            }
+
+            .card {
+                max-width: 315px;
+                min-width: 225px;
+                border-radius: 1rem;
+                perspective: 150rem;
+                -webkit-perspective: 150rem;
+                transition: all .5s;
+            }
+
+            .card:hover .card__side--front {
+                background-color: pink;
+                transform: rotateY(180deg);
+            }
+
+            .card:hover .card__side--back {
+                transform: rotateY(0);
+            }
+
+            .card__side--front {
+                padding: 1rem;
+                background-image: linear-gradient(45deg, white -15%, rgba(255,255,255,.5));
+                backdrop-filter: saturate(150%);
+                box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+                border-radius: inherit;
+                width: 100%;
+                height:100%;
+                cursor: default;
+                transition: all .8s ease;
+                position: absolute;
+                backface-visibility: hidden;
+                display: grid;
+                justify-content: center;
+                align-content: end;
+                grid-template-rows: 1fr;
+            }
+
+            .card__side--back {
+                position: absolute;
+                box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                border-radius: inherit;
+                width: 100%;
+                height: 100%;
+                transition: all .8s ease;
+                overflow: hidden;
+                background-image: linear-gradient(45deg, white -15%, rgba(255,255,255,.5));
+                cursor: default;
+
+            }
+
+            .opacity {
+                opacity: .25;
+                height: calc(100% - 2rem);
+                margin: 1rem;
+                display: grid;
+                justify-content: center;
+                align-content: end;
+                grid-template-rows: 1fr;
+            }
+
+            .animal__emoji {
+                font-size: 8rem;
+                text-align: center;
+                align-self: center;
+            }
+
+            .animal__from {
+                margin-left: .05rem;
+            }
+
+            .animal__description {
+                margin-left: .05rem;
+                
+            }
+
+            .animal__link--div {
+                text-align: center;
+                background: linear-gradient(to right, #ff4e50, #f9d423);
+                top: 25%;
+                transform: skewY(-15deg);
+                position: absolute;
+                width: 100%;
+                padding: 4rem;
+                box-shadow: 2px 8px 15px rgba(0,0,0,.5);
+                z-index: 2;
+                cursor: pointer;
+                transition: all .2s ease;
+            }
+            
+            .animal__link--div:hover {
+                transform:translateY(-1.5rem) skewY(-15deg);
+                box-shadow: 2px 10px 15px rgba(0,0,0,.5);
+            }
+
+
+            .animal__link--div:hover::after {
+                position: absolute;
+                z-index: -154;
+                width: 100%;
+                height: calc(100% + 1.5rem);
+                content: "";
+                top: 0;
+                left: 0;
+            }
+
+            .animal__link--div:hover .animal__link {
+                text-shadow:
+                -1px -1px 0 #000,
+                0   -1px 0 #000,
+                1px -1px 0 #000,
+                1px  0   0 #000,
+                1px  1px 0 #000,
+                0    1px 0 #000,
+                -1px  1px 0 #000,
+                -1px  0   0 #000;
+            }
+
+            .animal__link {
+                text-decoration: none;
+                display: block;
+                color: white;
+                height: 100%;
+                width: 100%;
+                letter-spacing: .2rem;
+                text-transform: uppercase;
+                transition: all .3s ease;
+            }
+            
+            .animal__link > span {
+                width: max-content;
+                font-size: 1.5rem;
+                height: 100%;
+                width: 100%;
+                display: inline-grid;
+                top: 0;
+                left: 0;
+                position: absolute;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .fixit {
+                display: block;
+                transform: scaleY(1.5);
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1 class="page-title">Most Intelligent Animals</h1>
+
+            <div class="animals_container">
+                {%ANIMALS%}
+            </div>
+        </div>
+
+    </body>
+</html>
+

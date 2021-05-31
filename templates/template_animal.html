@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      *,
+      *::after,
+      *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+      }
+
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+
+        background-color: mediumaquamarine;
+      }
+
+      .container {
+        width: 75vw;
+        height: 60vh;
+        margin: 5rem auto;
+
+        display: flex;
+      }
+
+      .image-container {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        border-radius: 3px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 30%, rgba(0, 0, 0, 0.35));
+      }
+
+      .image-container__back-button {
+        position: absolute;
+        display: block;
+        filter: saturate(0);
+        font-size: 2.5rem;
+        top: 5px;
+        left: 5px;
+        transition: all 0.2s;
+      }
+
+      .image-container__back-button:hover {
+        transform: scale(1.1) translateY(-0.25rem);
+        filter: saturate(100%) hue-rotate(120deg);
+      }
+
+      .image-container__image {
+        font-size: 20em;
+      }
+
+      .text-container {
+        width: 50%;
+        height: 100%;
+        background-color: #f1f1d4;
+        position: relative;
+        top: 2.8rem;
+        left: -0.5rem;
+        border-radius: 3px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        z-index: -1;
+        padding: 2rem 3rem;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+
+      .text-container__div {
+        margin: 1.85rem 0;
+      }
+
+      h2 {
+        /* display: inline-block; */
+      }
+
+      table {
+        background-color: #f0f0e6;
+        height: 100%;
+        padding: 0.5rem;
+        border-radius: 3px;
+        border: 0.5px solid grey;
+      }
+
+      tr {
+        /* background-color: lightgreen; */
+      }
+
+      td {
+        /* background-color: lightblue; */
+        width: auto;
+        vertical-align: top;
+      }
+
+      td:last-child {
+        font-family: 'Piedra', cursive;
+      }
+
+      /* td > span {
+        display: block;
+        margin-right: 1.2rem;
+        border-bottom: 0.5px dotted rgba(0, 0, 0, 0.8);
+      }
+
+      .last-span {
+        display: block;
+        border: 0.5px dotted rgba(0, 0, 0, 0.8);
+        padding: 0.25rem;
+      } */
+
+      td:first-child {
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        font-weight: 800;
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <a class="image-container__back-button" href="/overview">
+          ↩️
+        </a>
+        <span class="image-container__image">{%ANIMALIMAGE%}</span>
+      </div>
+
+      <div class="text-container">
+        <table>
+          <tr>
+            <td>name:</td>
+            <td><span>{%ANIMALNAME%}</span></td>
+          </tr>
+          <tr>
+            <td>from:</td>
+            <td><span>{%ANIMALFROM%}</span></td>
+          </tr>
+          <tr>
+            <td>skill:</td>
+            <td><span>{%ANIMALSKILL%}</span></td>
+          </tr>
+          <tr>
+            <td>population:</td>
+            <td><span>{%ANIMALQUANTITY%}</span></td>
+          </tr>
+          <tr>
+            <td>charity:</td>
+            <td><span>{%ANIMALCHARITY%}</span></td>
+          </tr>
+          <tr>
+            <td>description:</td>
+            <td><span class="last-span">{%ANIMALDESCRIPTION%}</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
