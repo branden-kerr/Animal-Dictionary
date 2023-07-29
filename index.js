@@ -12,6 +12,8 @@ const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const dataObj = JSON.parse(data);
 
 const port = process.env.PORT || 8000;
+// for Heroku
+// const host = '0.0.0.0'; 
 
 const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
@@ -44,6 +46,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
+// change to 127.0.0.1 for local, and 0.0.0.0 for Heroku
 server.listen(port, '0.0.0.0', () => {
   console.log('Listening to requests on port 8000');
 });
