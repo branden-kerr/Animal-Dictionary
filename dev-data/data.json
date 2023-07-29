@@ -1,0 +1,92 @@
+[
+  {
+    "id": 0,
+    "animalName": "Chimpanzees",
+    "image": "🐒",
+    "from": "Tropical Africa",
+    "skill": "Vocalization, Tool Use",
+    "quantity": "170,000-300,000",
+    "charity": "https://www.savethechimps.org/",
+    "description": "is a species of great ape native to the forest and savannah of tropical Africa. It has four confirmed subspecies and a fifth proposed subspecies. The chimpanzee and the closely related bonobo (sometimes called the pygmy chimpanzee) are classified in the genus Pan. Evidence from fossils and DNA sequencing shows that Pan is a sister taxon to the human lineage and is humans' closest living relative."
+  },
+  {
+    "id": 1,
+    "animalName": "Orcas",
+    "image": "🐳",
+    "from": "All 5 oceans",
+    "skill": "Vocalization, Dialects, and Culture",
+    "quantity": "50,000",
+    "charity": "https://www.worldwildlife.org/",
+    "description": " is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. Killer whales have a diverse diet, although individual populations often specialize in particular types of prey. Some feed exclusively on fish, while others hunt marine mammals such as seals and other species of dolphin."
+  },
+  {
+    "id": 2,
+    "animalName": "Elephants",
+    "image": "🐘",
+    "from": "subtropical regions of Africa and Asia",
+    "skill": "Self-awareness, lengthy problem solving",
+    "quantity": "40,000-50,000",
+    "charity": "https://www.worldwildlife.org/",
+    "description": "Elephants are mammals of the family Elephantidae and the largest existing land animals. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. Elephantidae is the only surviving family of the order Proboscidea; extinct members include the mastodons."
+  },
+  {
+    "id": 3,
+    "animalName": "African Grey Parrots ",
+    "image": "🦜",
+    "from": "Central Africa",
+    "skill": "Inferential Reasoning, Vocalization",
+    "quantity": "630,000 - 1,300,000",
+    "charity": "https://www.worldwildlife.org/",
+    "description": "The grey parrot (Psittacus erithacus), also known as the Congo grey parrot, Congo African grey parrot or African grey parrot, is an Old World parrot in the family Psittacidae."
+  },
+  {
+    "id": 4,
+    "animalName": "Octopus",
+    "image": "🐙",
+    "from": "Tropical waters",
+    "skill": "Tool Use, Play",
+    "quantity": "unknown",
+    "charity": "https://wwf.com",
+    "description": "The octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. Around 300 species are recognised, and the order is grouped within the class Cephalopoda with squids, cuttlefish, and nautiloids. Like other cephalopods, the octopus is bilaterally symmetric with two eyes and a beak, with its mouth at the center point of the eight limbs."
+  },
+  {
+    "id": 5,
+    "animalName": "Pig",
+    "image": "🐖",
+    "from": "worldwide, previously eurasia",
+    "skill": "Self Recognition",
+    "quantity": "677.6 million",
+    "charity": "https://www.worldwildlife.org/",
+    "description": "Pigs, like all suids, are native to the Eurasian and African continents, ranging from Europe to Pacific islands. Suids other than the pig are the babirusa of Indonesia, the pygmy hog of Asia, the warthog of Africa, and another genus of pigs from Africa. The suids are a sister clade to peccaries."
+  },
+  {
+    "id": 6,
+    "animalName": "Dog",
+    "image": "🐕",
+    "from": "worldwide, previously europe",
+    "skill": "respsonsiveness, problem solving",
+    "quantity": "900 million",
+    "charity": "https://www.torontohumanesociety.com/",
+    "description": "The dog is a member of the wolf-like canids and is the most widely abundant terrestrial carnivore. The dog and the extant gray wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated,which implies that the direct ancestor of the dog is extinct."
+  },
+  {
+    "id": 7,
+    "animalName": "Goat",
+    "image": "🐐",
+    "from": "worldwide, previously europe",
+    "skill": "Manipulate object, complex tasks",
+    "quantity": "124.4 million",
+    "charity": "https://www.worldwildlife.org/",
+    "description": "The domestic goat or simply goat  is a subspecies of C. aegagrus domesticated from the wild goat of Southwest Asia and Eastern Europe. The goat is a member of the animal family Bovidae and the subfamily Caprinae, meaning it is closely related to the sheep. "
+  },
+  {
+    "id": 8,
+    "animalName": "Squirrel",
+    "image": "🐿️",
+    "from": "worldwide",
+    "skill": "",
+    "quantity": "unknown",
+    "charity": "https://wwf.com",
+    "description": "Squirrels are members of the family Sciuridae, a family that includes small or medium-size rodents. The squirrel family includes tree squirrels, ground squirrels chipmunks, marmots, flying squirrels, and prairie dogs amongst other rodents. Squirrels are indigenous to the Americas, Eurasia, and Africa, and were introduced by humans to Australia."
+  }
+]
