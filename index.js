@@ -11,10 +11,10 @@ const tempAnimal = fs.readFileSync(`${__dirname}/templates/template_animal.html`
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const dataObj = JSON.parse(data);
 
+const port = process.env.PORT || 8000;
+
 const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
-
-  const port = process.env.PORT || 8000;
 
   // Overview Page
   if (pathname === '/' || pathname === '/overview') {
