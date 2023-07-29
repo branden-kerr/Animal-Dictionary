@@ -14,6 +14,8 @@ const dataObj = JSON.parse(data);
 const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
 
+  const port = process.env.PORT || 8000;
+
   // Overview Page
   if (pathname === '/' || pathname === '/overview') {
     res.writeHead(200, { 'content-type': 'text/html' });
@@ -42,6 +44,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(8000, '127.0.0.1', () => {
+server.listen(port, '127.0.0.1', () => {
   console.log('Listening to requests on port 8000');
 });
